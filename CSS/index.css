@@ -9,31 +9,28 @@ body {
 .navbar {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
-    color:aliceblue;
+    align-items: center;
 }
 .navbar ul {
     display: flex;
+    flex-direction: row;
     font-weight: bold;
     font-weight: 1.2rem;
-    text-decoration: none;
+    list-style: none;
+    padding: 0;
 
 }
 .navbar li {
-    display: flex;
-    text-decoration: none;
+    margin: 0 15px;
 }
 .navbar a {
     text-decoration: none;
-    color: aliceblue;
-}
-.navbar ul li {
-    margin: 0 15px;
+    color: rgb(54, 125, 187);
+    transition: color 0.3s ease-in, transform 0.3s ease-in;
 }
 .navbar a:hover {
     cursor: pointer;
     color: aquamarine;
     transform: scale(1.5rem);
-    transition: transform 0.3s ease-in;
 
 }
