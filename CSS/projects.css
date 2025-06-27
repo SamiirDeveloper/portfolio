@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-weight: 1.2rem;
+    list-style: none;
+    padding: 0;
+
+}
+.navbar li {
+    margin: 0;
+}
+.navbar a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 0.3s ease-in, transform 0.3s ease-in ;
+}
+.navbar a:hover {
+    cursor: pointer;
+    color: aquamarine;
+    transform: scale(1.5rem);
+
+}

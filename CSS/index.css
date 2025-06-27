@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:aliceblue;
+}
+.navbar ul {
+    display: flex;
+    font-weight: bold;
+    font-weight: 1.2rem;
+    text-decoration: none;
+
+}
+.navbar li {
+    display: flex;
+    text-decoration: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar a:hover {
+    cursor: pointer;
+    color: aquamarine;
+    transform: scale(1.5rem);
+    transition: transform 0.3s ease-in;
+
+}
