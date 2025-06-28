@@ -1,36 +1,46 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+html body {
     background-color: black;
-    color: aliceblue;
-}
-.navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.navbar ul {
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    font-weight: 1.2rem;
-    list-style: none;
-    padding: 0;
 
 }
-.navbar li {
-    margin: 0 15px;
+
+/* Change navbar brand font and spacing */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1.0px;
+  color: rgb(194, 231, 139);
 }
+
+/* Style the nav links */
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand:hover {
+    color: #ffd700 !important; /* gold color on hover */
+}
+
+/* Hover effect on nav links */
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important; /* gold color on hover */
+}
+
+/*navbar links */
 .navbar a {
-    text-decoration: none;
-    color: rgb(54, 125, 187);
-    transition: color 0.3s ease-in, transform 0.3s ease-in;
+text-decoration: none;
+color: #3df29d;
+transition: color 0.3s ease-in, transform 0.3s ease-in;
 }
-.navbar a:hover {
-    cursor: pointer;
-    color: aquamarine;
-    transform: scale(1.5rem);
-
+/*footer styles*/
+.footer {
+display: flex;
+justify-content: center;
+align-items: center;
+color: aliceblue;
+margin: 15px;
 }
