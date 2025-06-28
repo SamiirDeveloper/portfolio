@@ -6,9 +6,6 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-main {
-    flex: 1;
-}
 
 /* Change navbar brand font and spacing */
 .navbar-brand {
