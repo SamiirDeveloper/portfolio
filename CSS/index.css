@@ -1,11 +1,10 @@
 html, body {
     height: 100%;
-    background-color: black !important;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    font-family: 'inter', sans-serif;
 }
+
 main {
     flex: 1;
 }
@@ -30,17 +29,19 @@ main {
 }
 .navbar-brand:hover {
     color: #ffd700 !important; /* gold color on hover */
+    text-transform: uppercase;
 }
 
 /* Hover effect on nav links */
 .navbar-nav .nav-link:hover {
   color: #ffd700 !important; /* gold color on hover */
+  text-transform: uppercase;
 }
 
 /*navbar links */
 .navbar a {
 text-decoration: none;
-color: #3df29d;
+color: black;
 transition: color 0.3s ease-in, transform 0.3s ease-in;
 }
 
@@ -65,10 +66,11 @@ transition: color 0.3s ease-in, transform 0.3s ease-in;
 }
 /*footer styles*/
 .footer {
-display: flex;
-justify-content: center;
 background-color: #1e1e1e;
-align-items: center;
 color: aliceblue;
 padding: 20px;
+position: fixed;
+width: 100%;
+bottom: 0;
+align-items: center;
 }
