@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-light border border-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Samir Developer</a>
-            <button class="navbar-toggler rounded border border-light px-3 py-2" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand" href="index.html">Samir Developer</a>
+            <button class="navbar-toggler rounded border border-dark px-3 py-2" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,82 +67,81 @@
     <main>
 
         <div class="container my-5">
-            <h2 class="text-center mb-4 fw-bold fs-1">Contact Me</h2>
-            <form>
-                <!-- Full Name -->
-                <div class="mb-3">
-                    <label for="fullName" class="form-label fw-bold fs-">Full Name</label>
-                    <input type="text" class="form-control" id="fullName required" placeholder="Enter your full Name"
-                        required>
-                </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="border border-secondary p-4 rounded bg-light shadow-sm">
+                        <h2 class="text-center mb-4 fw-bold fs-1 border-bottom pb-2">Contact Me</h2>
 
-                <!-- Phone Number -->
-                <div class="mb-3">
-                    <label for="phoneNumber" class="form-label fw-bold fs-">Phone Number</label>
-                    <input type="tel" class="form-control" id="phoneNumber" placeholder="e.g. +1 555-123-4567" required>
-                </div>
-
-                <!-- Email -->
-                <div class="mb-3">
-                    <label for="emailAddress" class="form-label fw-bold fas-5">Email Address</label>
-                    <input type="email" class="form-control" id="emailAddress" placeholder="your@email.com" required>
-                </div>
-
-                <!-- Message -->
-                <div class="mb-3">
-                    <label for="message" class="form-label fw-bold fas-5">Your Message</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..."
-                        required></textarea>
-                </div>
-
-
-                <!-- Contact Form Terms & Conditions Checkbox -->
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" id="termsCheck" required>
-                    <label class="form-check-label" for="termsCheck">
-                        I agree to the
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms and Conditions</a>.
-                    </label>
-                </div>
-
-                <!-- Bootstrap Modal for Terms and Conditions -->
-                <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                        <form>
+                            <!-- Full Name -->
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label fw-bold">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
+                                    required>
                             </div>
-                            <div class="modal-body text-start">
-                                <p>By submitting this form, you agree to the following:</p>
-                                <ul>
-                                    <li>Your information will only be used to respond to your inquiry.</li>
-                                    <li>Samir Developer does not share, sell, or distribute your personal data to third
-                                        parties.</li>
-                                    <li>This website is for informational and portfolio purposes only.</li>
-                                    <li>Submitting a message does not establish a formal business relationship.</li>
-                                    <li>Your data may be retained for record-keeping but will not be used for marketing
-                                        unless you opt in.</li>
-                                </ul>
-                                <p>For any questions or requests regarding your data, please contact Samir directly via
-                                    the contact form.</p>
+
+                            <!-- Phone Number -->
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label fw-bold">Phone Number</label>
+                                <input type="tel" class="form-control" id="phoneNumber"
+                                    placeholder="e.g. +1 555-123-4567" required>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="emailAddress" class="form-label fw-bold">Email Address</label>
+                                <input type="email" class="form-control" id="emailAddress" placeholder="your@email.com"
+                                    required>
                             </div>
-                        </div>
+
+                            <!-- Message -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-bold">Your Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Type your message here..." required></textarea>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                <label class="form-check-label" for="termsCheck">
+                                    I agree to the
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms and
+                                        Conditions</a>.
+                                </label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-success w-100">Send Message</button>
+                        </form>
                     </div>
                 </div>
-
-
-
-
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-success w-100">Send Message</button>
-            </form>
+            </div>
         </div>
+
+        <!-- Modal (Place this OUTSIDE the form) -->
+        <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>By submitting this form, you agree to the following:</p>
+                        <ul>
+                            <li>Your information will only be used to respond to your inquiry.</li>
+                            <li>Samir Developer does not sell or share your data with third parties.</li>
+                            <li>This website is for portfolio purposes only.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 
@@ -159,11 +158,6 @@
 
 
     </footer>
-
-
-
-    </footer>
-
     <!-- Long Terms and Conditions Modal for Footer -->
     <div class="modal fade" id="footerTermsModal" tabindex="-1" aria-labelledby="footerTermsLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable">
