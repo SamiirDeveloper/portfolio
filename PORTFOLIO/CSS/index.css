@@ -14,7 +14,6 @@ main {
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 1.0px;
-  color: rgb(194, 231, 139);
 }
 
 /* Style the nav links */
@@ -34,7 +33,6 @@ main {
 /*navbar links */
 .navbar a {
 text-decoration: none;
-color: black;
 transition: color 0.3s ease-in, transform 0.3s ease-in;
 }
 .project-image {
