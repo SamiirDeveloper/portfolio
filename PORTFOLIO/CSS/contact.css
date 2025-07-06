@@ -38,6 +38,23 @@ a i:hover {
   transition: 0.2s ease-in-out;
 }
 
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 45px;
+  height: 45px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* Navigation & email link hover */
+.nav-link-hover:hover {
+  text-decoration: underline !important;
+  color: #dddddd !important;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
 
 
 /*footer styles*/

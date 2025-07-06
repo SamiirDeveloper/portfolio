@@ -1,33 +1,121 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'inter', sans-serif;
+
+/* Consistent image sizing and containment */
+.card-img-top {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  background-color: #f8f9fa; /* Light background to improve image contrast */
+  transition: transform 0.3s ease;
 }
 
-main {
-    flex: 1;
+/* Slight zoom on hover for interactivity */
+.card-img-top:hover {
+  transform: scale(1.05);
 }
 
-/* Change navbar brand font and spacing */
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-  letter-spacing: 1.0px;
+/* Add margin between carousel items */
+.carousel-item {
+  padding: 1.5rem 0;
 }
 
-/* Style the nav links */
+/* shadow for better contrast on controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+/* Responsive image ratios (if */
+.carousel .ratio {
+  height: auto;
+  aspect-ratio: 16 / 9; /* Forces consistent aspect ratio */
+}
+
+/* Padding for small screens on About Me text */
+@media (max-width: 768px) {
+  .about-me p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Ensure all cards inside carousel are consistent */
+.carousel .card {
+  max-width: 80%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+/* Social icons */
+.social-icon {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  color: #ffffff !important;
+  filter: drop-shadow(0 0 6px #ffffff88);
+}
+
+/* Navigation & email link hover */
+.nav-link-hover:hover {
+  text-decoration: underline !important;
+  color: #dddddd !important;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Copyright box */
+.copyright-box {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* footer.css */
+
+/* Social icons */
+.social-icon {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.social-icon:hover {
+  transform: scale(1.15);
+  color: #ffffff !important;
+  filter: drop-shadow(0 0 6px #ffffff88);
+}
+
+/* Navigation & email link hover */
+.nav-link-hover:hover {
+  text-decoration: underline !important;
+  color: #dddddd !important;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Copyright box */
+copyright-box {
+  max-width: 70%;
+  width: 100%;
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 45px;
+  height: 45px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
 
 .navbar-brand:hover {
     color: #ffd700 !important; /* gold color on hover */
-    text-transform: uppercase;
 }
-
 /* Hover effect on nav links */
 .navbar-nav .nav-link:hover {
   color: #ffd700 !important; /* gold color on hover */
-  text-transform: uppercase;
-  
 }
 
 /*navbar links */
@@ -35,129 +123,3 @@ main {
 text-decoration: none;
 transition: color 0.3s ease-in, transform 0.3s ease-in;
 }
-.project-image {
-  height: 50vh;
-  object-fit: cover;
-}
-a i:hover {
-  color: #0d6efd; /* Bootstrap Primary Blue */
-  transform: scale(1.2);
-  transition: 0.2s ease-in-out;
-}
-.project:hover {
-    color: #ffd700 !important; /* gold color on hover */
-
-}
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
-}
-
-.project-image {
-  transition: opacity 0.3s ease;
-}
-
-.card:hover .project-image {
-  opacity: 0.85;
-}
-.card:hover .project-image {
-  filter: brightness(80%);
-}
-.card-body {
-  transition: transform 0.3s ease;
-}
-.card:hover .card-body {
-  transform: translateY(-5px);
-}
-
-/* Container that holds the carousel: 80% viewport width and height */
-.carousel-container {
-  width: 80vw;
-  height: 80vh;
-  background-color: rgba(158, 153, 156, 0.468) !important;
-}
-
-/* Each carousel card takes full size of container */
-.project-card {
-  width: 100%;
-  height: 100%;
-}
-
-/* Make the image take about half the card height and cover area */
-.project-card img.card-img-top {
-  height: 80%;
-  object-fit: cover;
-}
-
-/* Make card body fill remaining height and use flex to push button to bottom */
-.project-card .card-body {
-  height: 80%;
-  padding: 1rem;
-}
-
-/* Optional: Add smooth carousel slide effect height fix */
-.carousel-item {
-  transition: transform 0.6s ease, opacity 0.6s ease !important;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-  filter: invert(1); /* makes icons white if background is light */
-  z-index: 10;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0,0,0,0.4);
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  background-size: 100%, 100%;
-}
-
-.project-image {
-  height: 50%;
-  object-fit: cover;
-}
-a i:hover {
-  color: #0d6efd; /* Bootstrap Primary Blue */
-  transform: scale(1.2);
-  transition: 0.2s ease-in-out;
-}
-.project:hover {
-    color: #ffd700 !important; /* gold color on hover */
-
-}
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
-}
-
-.project-image {
-  transition: opacity 0.3s ease;
-}
-
-.card:hover .project-image {
-  opacity: 0.85;
-}
-.card:hover .project-image {
-  filter: brightness(80%);
-}
-.card-body {
-  transition: transform 0.3s ease;
-}
-.card:hover .card-body {
-  transform: translateY(-5px);
-}
-
-
-/*footer styles*/
