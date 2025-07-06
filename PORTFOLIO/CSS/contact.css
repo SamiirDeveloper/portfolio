@@ -55,6 +55,14 @@ a i:hover {
   color: #dddddd !important;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
+.logo-img {
+  height: 150px; /* or 50px, depending on your navbar height */
+  width: auto;
+  display: block;
+}
 
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
-/*footer styles*/

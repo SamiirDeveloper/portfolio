@@ -13,7 +13,7 @@
   transform: scale(1.05);
 }
 
-/* Add margin between carousel items */
+/* margin between carousel items */
 .carousel-item {
   padding: 1.5rem 0;
 }
@@ -73,8 +73,6 @@
   width: 100%;
 }
 
-/* footer.css */
-
 /* Social icons */
 .social-icon {
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -122,4 +120,16 @@ copyright-box {
 .navbar a {
 text-decoration: none;
 transition: color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.logo-img {
+  height: 150px; /* or 50px, depending on your navbar height */
+  width: auto;
+  display: block;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
