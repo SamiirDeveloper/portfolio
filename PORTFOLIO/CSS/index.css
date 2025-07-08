@@ -123,7 +123,7 @@ transition: color 0.3s ease-in, transform 0.3s ease-in;
 }
 
 .logo-img {
-  height: 150px; /* or 50px, depending on your navbar height */
+  height: 75px; /* or 50px, depending on your navbar height */
   width: auto;
   display: block;
 }
@@ -132,4 +132,8 @@ transition: color 0.3s ease-in, transform 0.3s ease-in;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+.footer {
+  padding: 30px 20px;
+  margin-bottom: 10px;
 }
