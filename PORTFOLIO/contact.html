@@ -18,56 +18,105 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border border-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="ASSETS/logo.png" alt="Samir Developer Logo" class="logo-img">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border bor">
+        <div class="container-fluid d-flex align-items-center">
+
+            <!-- Brand -->
+            <a class="navbar-brand me-3" href="index.html">
+                <img src="ASSETS/logo.png" alt="Samir Developer Logo" class="logo-img" />
             </a>
-            <button class="navbar-toggler rounded border border-dark px-3 py-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown">
+
+            <!-- Language Dropdown for small screens -->
+            <ul class="navbar-nav d-lg-none me-3" style="position: relative;">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-0 d-inline-flex align-items-center" href="#"
+                        id="languageDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="white-space: nowrap;">
+                        <img src="https://flagcdn.com/w40/us.png" width="20" height="15" class="me-2"
+                            alt="English Flag" />
+                        English
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdownMobile" style="position: absolute;">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="https://flagcdn.com/w40/us.png" width="20" height="15" class="me-2"
+                                    alt="English Flag" />
+                                English
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flag_of_Somaliland.svg/40px-Flag_of_Somaliland.svg.png"
+                                    width="20" height="15" class="me-2" alt="Somaliland Flag" />
+                                Somali
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Hamburger toggler, pushed to the right -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-                <!-- Left Side Links -->
-                <ul class="navbar-nav ms-auto">
+            <!-- Collapsible navbar content -->
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-start text-lg-center me-lg-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
 
-                <!-- Right Side Language Dropdown -->
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Somaliland.svg"
-                                alt="Somaliland Flag" width="20" height="15" class="me-1">
-                            Somali
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                            <li>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Somaliland.svg"
-                                        width="20" height="15" class="me-2">
-                                    Somali
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
-                                        width="20" height="15" class="me-2">
-                                    English
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <!-- Search + Language dropdown for large screens -->
+                <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-2 ms-lg-auto mt-3 mt-lg-0"
+                    style="position: relative;">
+                    <!-- Search form -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search"
+                            aria-label="Search" />
+                        <button class="btn btn-sm btn-outline-success" type="submit">Go</button>
+                    </form>
+
+                    <!-- Language dropdown large screens only -->
+                    <ul class="navbar-nav d-none d-lg-block" style="position: relative;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-inline-flex align-items-center p-0" href="#"
+                                id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                style="white-space: nowrap;">
+                                <img src="https://flagcdn.com/w40/us.png" width="20" height="15" class="me-2"
+                                    alt="English Flag" />
+                                English
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown"
+                                style="position: absolute;">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <img src="https://flagcdn.com/w40/us.png" width="20" height="15" class="me-2"
+                                            alt="English Flag" />
+                                        English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flag_of_Somaliland.svg/40px-Flag_of_Somaliland.svg.png"
+                                            width="20" height="15" class="me-2" alt="Somaliland Flag" />
+                                        Somali
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-    </header>
+
+
+
 
     <!-- MAIN -->
     <main>
@@ -186,30 +235,19 @@
 
     </main>
 
-    <!-- footer.html -->
-    <!-- footer.html -->
+    <!-- Footer -->
     <footer class="footer bg-dark text-white pt-5 pb-1 position-relative">
         <div class="container-fluid px-5">
             <div class="row justify-content-center text-center">
-
-                <!-- Contact Me (Combined Section) -->
                 <div class="col-md-6 mb-4">
-                    <h5 class="mb-3">Connect with me</h5>
+                    <h5 class="mb-3 border-bottom pb-2 d-inline-block">Connect with me</h5>
 
-                    <!-- Email List -->
                     <ul class="list-unstyled mb-3">
-                        <li><i class="fas fa-envelope me-2"></i><a href="mailto:recruitment@SamirDeveloper.com"
-                                class="text-light text-decoration-none nav-link-hover">recruitment@SamirDeveloper.com</a>
-                        </li>
                         <li><i class="fas fa-envelope me-2"></i><a href="mailto:inquiries@SamirDeveloper.com"
                                 class="text-light text-decoration-none nav-link-hover">inquiries@SamirDeveloper.com</a>
                         </li>
-                        <li><i class="fas fa-envelope me-2"></i><a href="mailto:services@SamirDeveloper.com"
-                                class="text-light text-decoration-none nav-link-hover">services@SamirDeveloper.com</a>
-                        </li>
-                    </ul>
 
-                    <!-- Location with Icons -->
+                    </ul>
                     <p class="mb-3">
                         <img src="https://img.icons8.com/ios-filled/20/ffffff/marker.png" width="20" height="20"
                             alt="Location Icon" class="me-2">
@@ -217,45 +255,52 @@
                             width="20" height="15" alt="US Flag" class="me-2">
                         Seattle, WA. USA
                     </p>
-
-                    <!-- Social Media Icons -->
                     <div class="d-flex flex-wrap gap-3 justify-content-center">
-                        <a href="https://facebook.com/SamiirDeveloper" class="text-light fs-4 social-icon"
-                            target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/SamiirDeveloper" class="text-light fs-4 social-icon"
-                            target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.tiktok.com/@samiirdeveloper" class="text-light fs-4 social-icon"
-                            target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.snapchat.com/add/SamiirDeveloper" class="text-light fs-4 social-icon"
-                            target="_blank" rel="noopener"><i class="fab fa-snapchat-ghost"></i></a>
-                        <a href="https://instagram.com/SamiirDeveloper" class="text-light fs-4 social-icon"
-                            target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                        <a href="https://youtube.com/@SamiirDeveloper" class="text-light fs-4 social-icon"
-                            target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-                        <a href="https://github.com/SamiirDeveloper" class="text-light fs-4 social-icon" target="_blank"
-                            rel="noopener"><i class="fab fa-github"></i></a>
+                        <a href="https://facebook.com/SamiirDeveloper" class="text-light fs-4" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/SamiirDeveloper" class="text-light fs-4" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@samiirdeveloper" class="text-light fs-4" target="_blank"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.snapchat.com/add/SamiirDeveloper" class="text-light fs-4"
+                            target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="https://instagram.com/SamiirDeveloper" class="text-light fs-4" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@SamiirDeveloper" class="text-light fs-4" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/SamiirDeveloper" class="text-light fs-4" target="_blank"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3 border-bottom pb-2 d-inline-block">Navigation</h5>
 
-                <!-- Navigation -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3">Navigation</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-light text-decoration-none nav-link-hover"><i
-                                    class="fas fa-home me-2"></i>Home</a></li>
-                        <li><a href="projects.html" class="text-light text-decoration-none nav-link-hover"><i
-                                    class="fas fa-folder-open me-2"></i>Projects</a></li>
-                        <li><a href="contact.html" class="text-light text-decoration-none nav-link-hover"><i
-                                    class="fas fa-envelope me-2"></i>Contact</a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#footerTermsModal"
-                                class="text-light text-decoration-none nav-link-hover"><i
-                                    class="fas fa-file-alt me-2"></i>Terms & Conditions</a></li>
+                        <li class="mb-2">
+                            <a href="index.html" class="text-light text-decoration-none">
+                                <i class="fas fa-home me-2"></i>Home
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="projects.html" class="text-light text-decoration-none">
+                                <i class="fas fa-folder-open me-2"></i>Projects
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contact.html" class="text-light text-decoration-none">
+                                <i class="fas fa-envelope me-2"></i>Contact
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#footerTermsModal"
+                                class="text-light text-decoration-none">
+                                <i class="fas fa-file-alt me-2"></i>Terms & Conditions
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
             </div>
-
-            <!-- Copyright -->
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
                     <div class="text-center copyright-box" style="max-width:75%; width:100%;">
@@ -264,6 +309,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
 
     <!-- Long Terms and Conditions Modal for Footer -->

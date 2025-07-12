@@ -1,4 +1,20 @@
 
+html, body {
+  min-height: 100vh !important;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+
 /* Consistent image sizing and containment */
 .card-img-top {
   width: 100%;
@@ -31,14 +47,6 @@
 .carousel .ratio {
   height: auto;
   aspect-ratio: 16 / 9; /* Forces consistent aspect ratio */
-}
-
-/* Padding for small screens on About Me text */
-@media (max-width: 768px) {
-  .about-me p {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }
 
 /* Ensure all cards inside carousel are consistent */
@@ -121,9 +129,13 @@ copyright-box {
 text-decoration: none;
 transition: color 0.3s ease-in, transform 0.3s ease-in;
 }
+.footer {
+  padding: 30px 20px;
+  margin-bottom: 10px;
+}
 
 .logo-img {
-  height: 75px; /* or 50px, depending on your navbar height */
+  height: 75px; 
   width: auto;
   display: block;
 }
@@ -131,9 +143,20 @@ transition: color 0.3s ease-in, transform 0.3s ease-in;
 .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 0;
 }
-.footer {
-  padding: 30px 20px;
-  margin-bottom: 10px;
+
+/* Change navbar brand font and spacing */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1.0px;
+}
+
+
+/* Padding for small screens on About Me text */
+@media (max-width: 768px) {
+  .about-me p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
